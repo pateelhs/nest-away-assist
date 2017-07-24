@@ -1,4 +1,14 @@
 language: node_js
 node_js:
-  - "4.3.2"
-  - "6.10.2"
+- "4.3.2"
+- "6.10.2"
+deploy:
+  provider: lambda
+  function_name: away-assist
+  region: eu-west-1
+  role: arn:aws:iam::503012793408:role/lambda_deploy
+  runtime: nodejs6.10
+  handler_name: handler
+  access_key_id: AKIAJXMT76QHVGVL4JDQ
+  secret_access_key:
+    secure: m7KXVorTEOhGB3w+weNIW3K7/y0iPYGwuKeUh4vG2gJYQeR40PSJ7jjCzex4ojzewkGW8zx2MZ+LFAY/IOscZhVimwrgpJ+j7Cili7d9psR+81morBfGsCrgJv7KbwqTndMVDBSTCvE00slGonADeRnoeXFvLvoeMktSo4pJtHx6SD3Iy/j22oU0m0zU/kmax2M0J6V5Vq4ydD468pA/hu9YwRr6JpzaJzskvtXjXuOcocmzqxAZlvmdHTWxgoFRz7jNF2YKVci32PszDKTgdPvN1qEW8cAPqaGw12TSDkMeNE2gcuQJIlOriIuCdsTF9ijFd6h/WL3gYJcL5vRkd+hOuuXQfC+bEOIQQonfZqU3MruaUVknxh3AjRxkuj5JZHmPxLyPZOlzv8nhY4Kjlwk+wlFveG+S1y/9XXPyxqi29MjUhpSXXalPd8huWkaBxU7vcl/MM+a6cYQSHGqItryxR/F6czuSZHqfbfocgXbVEhUpQUeTW3FSiD1PMULiSEi0CcWwhrabK0tBr1xdWeYffWTxh1QAbhgDJzJsCwZsxpfZuMDn6sVqTl1Aqx53JTadi5jy6+nr6RtLLrpq/93OJ6Sak4gKQ/jS7FzCJTGDjYHbqERepYVoKg7w8e6Bpwb2ait74Ib/fwHy6nqxg7qXhoZA4W+TMfDbh7eSzCM=
