@@ -27,6 +27,6 @@
         "sinon": "^2.3.8"
     },
     "dependencies": {
-        "nest-api": "0.0.7"
+        "nest-api": "git+https://github.com/nihakue/node-nest-api.git#master"
     }
 }
